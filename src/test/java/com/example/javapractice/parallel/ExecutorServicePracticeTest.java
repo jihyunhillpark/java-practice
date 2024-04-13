@@ -12,7 +12,7 @@ import java.util.concurrent.Future;
 public class ExecutorServicePracticeTest {
 
     @Test
-    void sequential_process_when_simple_sequential_iteration() throws InterruptedException {
+    void sequential_process_with_simple_sequential_iteration() throws InterruptedException {
         long start = System.nanoTime();
         int totalResult = 0;
         for (int number = 0; number <= 1000; number++) {
