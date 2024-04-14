@@ -11,8 +11,9 @@ public class StubNumbers {
 
     static {
         for (int i = 0; i < 10; i++) {
-            int start = i * 100;
-            numbers.add(IntStream.rangeClosed(start + 1, start + 100)
+            int chunkUnit = 100;
+            int start = i * chunkUnit;
+            numbers.add(IntStream.rangeClosed(start + 1, start + chunkUnit)
                     .boxed()
                     .collect(Collectors.toList()));
         }
